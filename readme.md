@@ -117,4 +117,4 @@ The entire main thrust/content of this doc came from - [!Richard Litt(https://gi
 
 ## License
 <!-- Actually required. State the owner, -->
-[MIT](LICENSE) © Richard Littauer
+[MIT](LICENSE) © CDG
