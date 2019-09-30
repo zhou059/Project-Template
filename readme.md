@@ -1,120 +1,58 @@
-# Repo Title _(alternative Repo Name)_
-<!-- 
-    This should be identical to the repository name/project name, or a relevant title, with the repo name in the italicized paranthesis. The repo name should be in this title is what I'm gettin at here.
--->
-![Repository Banner](/images/RepoLogo)
-<!-- Optional. This should be sourced from your repository locally. No text needed. 
--->
+# Salesforce App
 
-[![build passing](https://img.shields.io/badge/build-passing-green.svg)]()
+This guide helps Salesforce developers who are new to Visual Studio Code go from zero to a deployed app using Salesforce Extensions for VS Code and Salesforce CLI.
 
-[![Salesforce API v46.0](https://img.shields.io/badge/Salesforce%20API-v46.0-blue.svg)]()
+## Part 1: Choosing a Development Model
 
-[![Lightning Experience Required](https://img.shields.io/badge/Lightning%20Experience-Required-informational.svg)]()
-[![Lightning Experience Required](https://img.shields.io/badge/Lightning%20Experience-Not%20Required-inactive.svg)]()
+There are two types of developer processes or models supported in Salesforce Extensions for VS Code and Salesforce CLI. These models are explained below. Each model offers pros and cons and is fully supported.
 
-[![User License Sales](https://img.shields.io/badge/User%20License-Sales-3d867d.svg)]()
-[![User License Sales](https://img.shields.io/badge/User%20License-Service-7f2443.svg)]()
-[![User License Sales](https://img.shields.io/badge/User%20License-Communities-ffc20e.svg)]()
-[![User License Sales](https://img.shields.io/badge/User%20License-Platform-032e61.svg)]()
-[![User License Sales](https://img.shields.io/badge/User%20License-None-818181.svg)]()
+### Package Development Model
 
-[![Apex Test Coverage 100](https://img.shields.io/badge/Apex%20Test%20Coverage-100-brightgreen.svg)]()
-[![Apex Test Coverage 83](https://img.shields.io/badge/Apex%20Test%20Coverage-83-yellowgreen.svg)]()
-[![Apex Test Coverage 25](https://img.shields.io/badge/Apex%20Test%20Coverage-25-orange.svg)]()
+The package development model allows you to create self-contained applications or libraries that are deployed to your org as a single package. These packages are typically developed against source-tracked orgs called scratch orgs. This development model is geared toward a more modern type of software development process that uses org source tracking, source control, and continuous integration and deployment.
 
+If you are starting a new project, we recommend that you consider the package development model. To start developing with this model in Visual Studio Code, see [Package Development Model with VS Code](https://forcedotcom.github.io/salesforcedx-vscode/articles/user-guide/package-development-model). For details about the model, see the [Package Development Model](https://trailhead.salesforce.com/en/content/learn/modules/sfdx_dev_model) Trailhead module.
 
-<!-- 
-    Badges
-    Salesforce badges
-        Salesforce API : Version Number
-        Lightning Experience : Required / Not Required (Optional, unless using LWC/Aura)
-        User License: Sales / Service / Communities / Platform / None (Optional)
-        Apex Code Coverage: % 100 green, >75 orange, <75 red (Required if including Apex)
--->    
-> Short description. <120 characters, match the package/repo's description field.
+If you are developing against scratch orgs, use the command `SFDX: Create Project` (VS Code) or `sfdx force:project:create` (Salesforce CLI)  to create your project. If you used another command, you might want to start over with that command.
 
-Longform description. No title here. The quote I stole to define this from the template is - 
-* "This should describe your module in broad terms, generally in just a few paragraphs; more detail of the module's routines or methods, lengthy code examples, or other in-depth material should be given in subsequent sections.
-Ideally, someone who's slightly familiar with your module should be able to refresh their memory without hitting "page down". As your reader continues through the document, they should receive a progressively greater amount of knowledge." - Kirrily "Skud" Robert, perlmodstyle
+When working with source-tracked orgs, use the commands `SFDX: Push Source to Org` (VS Code) or `sfdx force:source:push` (Salesforce CLI) and `SFDX: Pull Source from Org` (VS Code) or `sfdx force:source:pull` (Salesforce CLI). Do not use the `Retrieve` and `Deploy` commands with scratch orgs.
 
-## Table of Contents
-<!-- Optional if doc is less than 100 lines total 
-    Link to all sections, start with the next one, don't include anything above. Capture all ## headings, optional to get ### and ####, you do you.
--->
-- [Repo Title _(alternative Repo Name)_](#Repo-Title-alternative-Repo-Name)
-  - [Table of Contents](#Table-of-Contents)
-  - [Security and Limitations (see note)](#Security-and-Limitations-see-note)
-  - [Background](#Background)
-  - [Install](#Install)
-    - [Dependencies](#Dependencies)
-  - [Usage](#Usage)
-      - [method(variable1, variable2)](#methodvariable1-variable2)
-  - [Extra Sections](#Extra-Sections)
-    - [Security / Limitations (if not in the primary spot)](#Security--Limitations-if-not-in-the-primary-spot)
-    - [Example Usage](#Example-Usage)
-    - [Related Projects](#Related-Projects)
-  - [Maintainers](#Maintainers)
-  - [Thanks](#Thanks)
-  - [Contributing](#Contributing)
-  - [License](#License)
+### Org Development Model
 
-## Security and Limitations (see note)
-This normally would not go here - and instead sit after Usage. If there are severe impacts or concerns to either security or system limits, you should put them upfront here, in order to immediately draw attention to them. Examples might include:
-* Requiring Remote Site Settings or CSP whitelisting of apps/systems not controlled by the user nor Salesforce. Particularly if not controlled by you either.
-* **Giving credentials or permissions to an external system**
-* Expectation of considerable API calls (>10k) when launched, or generation of a LOT of data for some reason.
-* Triggers on standard objects that don't use a best practice model of helper classes.
-* Code modification of sharing rules, profiles, or roles
-* Long running executions
-* Setup of scheduled apex jobs
+The org development model allows you to connect directly to a non-source-tracked org (sandbox, Developer Edition (DE) org, Trailhead Playground, or even a production org) to retrieve and deploy code directly. This model is similar to the type of development you have done in the past using tools such as Force.com IDE or MavensMate.
 
-## Background
+To start developing with this model in Visual Studio Code, see [Org Development Model with VS Code](https://forcedotcom.github.io/salesforcedx-vscode/articles/user-guide/org-development-model). For details about the model, see the [Org Development Model](https://trailhead.salesforce.com/content/learn/modules/org-development-model) Trailhead module.
 
-Gimmie yer life story here. Motivation, dependencies that might be unclear, what this thing is and what you're trying to accomplish. 
+If you are developing against non-source-tracked orgs, use the command `SFDX: Create Project with Manifest` (VS Code) or `sfdx force:project:create --manifest` (Salesforce CLI) to create your project. If you used another command, you might want to start over with this command to create a Salesforce DX project.
 
-## Install
+When working with non-source-tracked orgs, use the commands `SFDX: Deploy Source to Org` (VS Code) or `sfdx force:source:deploy` (Salesforce CLI) and `SFDX: Retrieve Source from Org` (VS Code) or `sfdx force:source:retrieve` (Salesforce CLI). The `Push` and `Pull` commands work only on orgs with source tracking (scratch orgs).
 
-Illustrate how to install. If SFDX launched, should have code block(s) to illustrate scratch org creation, package installation, and any other setup steps required to get to Usage state.
+## The `sfdx-project.json` File
 
-### Dependencies
-* AppExchange applications or other packages
-* Org Shape or feature requirements
-* Any other significant dependencies, Pilots, etc.
+The `sfdx-project.json` file contains useful configuration information for your project. See [Salesforce DX Project Configuration](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_ws_config.htm) in the _Salesforce DX Developer Guide_ for details about this file.
 
-## Usage
+The most important parts of this file for getting started are the `sfdcLoginUrl` and `packageDirectories` properties.
 
-Illustrate proper usage. If usage requires a CLI, or some form of Apex or LEX invocation (helper class or controller for pages), bring in a code block to illustrate proper usage, or ideally provide method definitions.
-* Ex.
-  * Apex: `Object return = mySuperCoolClass.myMethod(isThisAVariable?)`
-  * LWC: `import myMethod from '@salesforce/apex/mySuperCoolClass.myMethod'` `@wire(myMethod,{isThisAVariable: 'awYeah'}) return;`
+The `sfdcLoginUrl` specifies the default login URL to use when authorizing an org.
 
-Method Definition Example 
-#### method(variable1, variable2) 
-**Params**
-* variable1, *string*: text you want to method
-* variable2, *integer*: number of times to method variable 1
-**Returns**
-* Type *string*
+The `packageDirectories` filepath tells VS Code and Salesforce CLI where the metadata files for your project are stored. You need at least one package directory set in your file. The default setting is shown below. If you set the value of the `packageDirectories` property called `path` to `force-app`, by default your metadata goes in the `force-app` directory. If you want to change that directory to something like `src`, simply change the `path` value and make sure the directory you’re pointing to exists.
 
-## Extra Sections
-### Security / Limitations (if not in the primary spot)
-### Example Usage
-<!-- Are there other live uses of this project?-->
-### Related Projects
-<!-- Are there related projects or repos assoc with this?-->
+```json
+"packageDirectories" : [
+    {
+      "path": "force-app",
+      "default": true
+    }
+]
+```
 
-## Maintainers
-<!--Small list of folk in charge, not everyone involved.-->
-[Name/Handle](https://github.com/REPOSITORYGOHEREYO)
+## Part 2: Working with Source
 
-## Thanks
-<!--Don't be a jerk thank those who helped you-->
-The entire main thrust/content of this doc came from - [!Richard Litt(https://github.com/RichardLitt/standard-readme/blob/master/spec.md)]'s standard-readme doc. 
+For details about developing against scratch orgs, see the [Package Development Model](https://trailhead.salesforce.com/en/content/learn/modules/sfdx_dev_model) module on Trailhead or [Package Development Model with VS Code](https://forcedotcom.github.io/salesforcedx-vscode/articles/user-guide/package-development-model).
 
-## Contributing
-<!--Give instructions on how to contribute to this repository. Where do I ask questions? Do you accept PRs? What are the requirements to contribute? Don't be a jerk. Use issues if you can.-->
+For details about developing against orgs that don’t have source tracking, see the [Org Development Model](https://trailhead.salesforce.com/content/learn/modules/org-development-model) module on Trailhead or [Org Development Model with VS Code](https://forcedotcom.github.io/salesforcedx-vscode/articles/user-guide/org-development-model).
 
-## License
-<!-- Actually required. State the owner, -->
-[MIT](LICENSE) © CDG
+## Part 3: Deploying to Production
+
+Don’t deploy your code to production directly from Visual Studio Code. The deploy and retrieve commands do not support transactional operations, which means that a deployment can fail in a partial state. Also, the deploy and retrieve commands don’t run the tests needed for production deployments. The push and pull commands are disabled for orgs that don’t have source tracking, including production orgs.
+
+Deploy your changes to production using [packaging](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_dev2gp.htm) or by [converting your source](https://developer.salesforce.com/docs/atlas.en-us.sfdx_cli_reference.meta/sfdx_cli_reference/cli_reference_force_source.htm#cli_reference_convert) into metadata format and using the [metadata deploy command](https://developer.salesforce.com/docs/atlas.en-us.sfdx_cli_reference.meta/sfdx_cli_reference/cli_reference_force_mdapi.htm#cli_reference_deploy).
