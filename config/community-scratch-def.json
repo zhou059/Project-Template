@@ -1,0 +1,11 @@
+{
+  "orgName": "Layouts Demo Company",
+  "edition": "Developer",
+  "features": ["Communities", "Sites", "PersonAccounts"],
+  "settings": {
+    "orgPreferenceSettings": {
+      "s1DesktopEnabled": true,
+      "networksEnabled": true
+    }
+  }
+}
