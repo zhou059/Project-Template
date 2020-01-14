@@ -2,6 +2,14 @@
 <!-- 
     This should be identical to the repository name/project name, or a relevant title, with the repo name in the italicized paranthesis. The repo name should be in this title is what I'm gettin at here.
 -->
+
+[![Contributors][contributors-shield]][contributors-url]
+[![Forks][forks-shield]][forks-url]
+[![Stargazers][stars-shield]][stars-url]
+[![Issues][issues-shield]][issues-url]
+[![MIT License][license-shield]][license-url]
+[![LinkedIn][linkedin-shield]][linkedin-url]
+
 [![build passing](https://img.shields.io/badge/build-passing-green.svg)]()
 
 [![Salesforce API v46.0](https://img.shields.io/badge/Salesforce%20API-v46.0-blue.svg)]()
