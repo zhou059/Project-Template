@@ -2,10 +2,6 @@
 <!-- 
     This should be identical to the repository name/project name, or a relevant title, with the repo name in the italicized paranthesis. The repo name should be in this title is what I'm gettin at here.
 -->
-![Repository Banner](/images/RepoLogo)
-<!-- Optional. This should be sourced from your repository locally. No text needed. 
--->
-
 [![build passing](https://img.shields.io/badge/build-passing-green.svg)]()
 
 [![Salesforce API v46.0](https://img.shields.io/badge/Salesforce%20API-v46.0-blue.svg)]()
@@ -31,8 +27,8 @@
         Lightning Experience : Required / Not Required (Optional, unless using LWC/Aura)
         User License: Sales / Service / Communities / Platform / None (Optional)
         Apex Code Coverage: % 100 green, >75 orange, <75 red (Required if including Apex)
--->    
-> Short description. <120 characters, match the package/repo's description field.
+-->
+> Description. <120 characters, match the package/repo's description field.
 
 Longform description. No title here. The quote I stole to define this from the template is - 
 * "This should describe your module in broad terms, generally in just a few paragraphs; more detail of the module's routines or methods, lengthy code examples, or other in-depth material should be given in subsequent sections.
@@ -114,6 +110,19 @@ The entire main thrust/content of this doc came from - [!Richard Litt(https://gi
 
 ## Contributing
 <!--Give instructions on how to contribute to this repository. Where do I ask questions? Do you accept PRs? What are the requirements to contribute? Don't be a jerk. Use issues if you can.-->
+* [GitHub Emoji Cheat Sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet)
+* [Img Shields](https://shields.io)
+* [Choose an Open Source License](https://choosealicense.com)
+* [GitHub Pages](https://pages.github.com)
+* [Animate.css](https://daneden.github.io/animate.css)
+* [Loaders.css](https://connoratherton.com/loaders)
+* [Slick Carousel](https://kenwheeler.github.io/slick)
+* [Smooth Scroll](https://github.com/cferdinandi/smooth-scroll)
+* [Sticky Kit](http://leafo.net/sticky-kit)
+* [JVectorMap](http://jvectormap.com)
+* [Font Awesome](https://fontawesome.com)
+* [Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
+* [RecordIt GIF Creator](https://recordit.co/)
 
 ## License
 <!-- Actually required. State the owner, -->
