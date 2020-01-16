@@ -4,9 +4,13 @@
 ![Status](https://img.shields.io/badge/status-Archived-red) / 
 ![Geography](https://img.shields.io/badge/Geography-US-blue)
 
+<p align="center">
+
 # Title Placeholder
 
 ###### Short Description Placeholder
+
+</p>
 
 <!-- Sections below are Optional -->
 
