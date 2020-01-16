@@ -25,6 +25,7 @@ Provide steps or general story for showcasing the package contents.
 [Ankit Sanghvi/ankit-sanghvi](https://github.com/ankit-sanghvi)
 
 ## References
+* [Quip Documentation Link](https://quip.com)
 * [GitHub Emoji Cheat Sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet)
 * [Choose an Open Source License](https://choosealicense.com)
 * [Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
