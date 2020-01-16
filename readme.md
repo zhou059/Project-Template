@@ -5,8 +5,7 @@
 ![Status](https://img.shields.io/badge/status-In%20Development-yellow)
 ![Status](https://img.shields.io/badge/status-Beta-yellowgreen)
 ![Status](https://img.shields.io/badge/status-Complete-green)
-![Status](https://img.shields.io/badge/status-Archived-red)
-
+![Status](https://img.shields.io/badge/status-Archived-red) / 
 ![Geography](https://img.shields.io/badge/Geography-US-blue)
 
 <!-- Sections below are Optional -->
