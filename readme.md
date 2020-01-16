@@ -17,7 +17,11 @@ Provide additional steps to setup the package, such as assigning permission sets
 
 ## Demo Script
 
-Provide steps or general story for showcasing the package contents. 
+Provide steps or general story for showcasing the package contents.
+
+## Release History
+
+A list of updates made over time after initial release. 
 
 ## Maintainers
 [Jonathan Zhou/zhou059](https://github.com/zhou059)
