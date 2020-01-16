@@ -6,9 +6,7 @@
 
 <p align="center">
 
-# Title Placeholder
-
-###### Short Description Placeholder
+  <h1>Title Placeholder</h1>
 
 </p>
 
