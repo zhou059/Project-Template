@@ -9,6 +9,8 @@
 
 <!-- Sections below are Optional -->
 
+---
+
 ## Additional Setup Instructions
 
 Provide additional steps to setup the package, such as assigning permission sets or loading sample data. 
