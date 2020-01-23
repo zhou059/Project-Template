@@ -35,6 +35,7 @@ A list of updates made over time after initial release.
 * [Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
 * [RecordIt GIF Creator](https://recordit.co/)
 * [Badges Reference](https://github.com/badges/shields/blob/master/README.md)
+* [![Deploy](https://deploy-to-sfdx.com/dist/assets/images/DeployToSFDX.svg)](https://deploy-to-sfdx.com/)
 
 ## License
 [MIT](LICENSE)
