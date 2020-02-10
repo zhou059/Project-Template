@@ -1,10 +1,10 @@
 {
-  "orgName": "jonathan.zhou Company",
+  "orgName": "Demo Company",
   "edition": "Developer",
   "features": [],
   "settings": {
-    "orgPreferenceSettings": {
-      "s1DesktopEnabled": true
+    "lightningExperienceSettings": {
+      "enableS1DesktopEnabled": true
     }
   }
 }
