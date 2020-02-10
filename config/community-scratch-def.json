@@ -1,11 +1,15 @@
 {
-  "orgName": "Communities Company",
-  "edition": "Developer",
-  "features": ["Communities", "Sites", "PersonAccounts"],
-  "settings": {
-    "orgPreferenceSettings": {
-      "s1DesktopEnabled": true,
-      "networksEnabled": true
+    "orgName": "Sample Org",
+    "edition": "developer",
+    "features": [
+        "COMMUNITIES"
+    ],
+    "settings": {
+        "experienceBundleSettings": {
+            "enableExperienceBundleMetadata": true
+        },
+        "communitiesSettings": {
+            "enableNetworksEnabled": true
+        }
     }
-  }
 }
